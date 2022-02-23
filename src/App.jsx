@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link,Outlet } from 'react-router-dom';
 import SignIn from './components/Invoices';
 import Register from './components/Expenses';
 import Home from './components/Home';
@@ -16,9 +16,9 @@ function App() {
         }}
       >
         <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/expenses">Expenses</Link> |{" "}
-        <Link to="/learn">Learn</Link>
+        <Link to="/expenses">Expenses</Link>
       </nav>
+      <Outlet />
      </div>
   );
 }
