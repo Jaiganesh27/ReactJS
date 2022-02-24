@@ -7,17 +7,18 @@ import Home from './components/Home';
 import NavBar from './NavBar';
 function App() {
   return (
+    
       <div>
-        <h1>Bookkeeper!</h1>
+        <h1>Banking!</h1>
         <nav
         style={{
           borderBottom: "solid 1px",
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/invoices">Invoices</Link> |{" "}
+        {/* <Link to="/invoices">Invoices</Link> |{" "}
         <Link to="/expenses">Expenses</Link> |{" "}
-        <Link to="/learn">Learn</Link>
+        <Link to="/learn">Learn</Link> */}
       </nav>
      </div>
   );

@@ -11,21 +11,22 @@ import Learn from './components/Learn';
 import Bundles from './components/Bundles';
 import Courses from './components/Courses';
 ReactDOM.render(
-  <BrowserRouter>
-     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/Home" element={<Navigate replace to = "/invoices"/>} />
-      <Route path="/expenses" element={<Expenses />} />
-      <Route path="/invoices" element={<Invoices />} />
-      <Route path="/learn" element={<Learn />} >
-        <Route path = "courses" element={<Courses/>} >
-          <Route path=":courseid" element={<CourseId />} />
-        </Route>
-        <Route path = "bundles" element={<Bundles/>} />
-      </Route>
-      <Route path="/dashboard" element = {<Dashboard />} />
-    </Routes>
-  </BrowserRouter>,
+  // <BrowserRouter>
+  //    <Routes>
+  //     <Route path="/" element={<App />} />
+  //     <Route path="/Home" element={<Navigate replace to = "/invoices"/>} />
+  //     <Route path="/expenses" element={<Expenses />} />
+  //     <Route path="/invoices" element={<Invoices />} />
+  //     <Route path="/learn" element={<Learn />} >
+  //       <Route path = "courses" element={<Courses/>} >
+  //         <Route path=":courseid" element={<CourseId />} />
+  //       </Route>
+  //       <Route path = "bundles" element={<Bundles/>} />
+  //     </Route>
+  //     <Route path="/dashboard" element = {<Dashboard />} />
+  //   </Routes>
+  // </BrowserRouter>,
+  <App />,
   document.getElementById('root')
 );
 
